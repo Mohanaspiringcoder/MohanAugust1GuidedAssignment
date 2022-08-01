@@ -1,0 +1,32 @@
+<body>
+    <button type="button" class="btn btn-secondary" (click)="moveToAddProductDetails()">Add Products</button>
+   <br><br>
+   <table border="1" >
+       <tr >
+           <th>Product Id</th>
+           <th>SKU</th>
+           <th>Name</th>
+           <th>Description</th>
+           <th>Unit Price</th>
+           <th>ImageURL</th>
+           <th>Active</th>
+           <th>Units In Stock</th>
+           <th>Date Created</th>
+           <th>Last Updated</th>
+           <th>Category Id</th>
+       </tr>
+       <tr *ngFor="let list of productList">
+           <td>{{list.id}}</td>
+           <td>{{list.sku}}</td>
+           <td>{{list.name}}</td>
+           <td>{{list.description}}</td>
+           <td>{{list.unitprice}}</td>
+           <td><img src={{list.imageurl}} style="width: 100px; ;"/></td>
+           <td>{{list.active}}</td>
+           <td>{{list.unitsinstock}}</td>
+           <td>{{list.datecreated}}</td>
+           <td>{{list.lastupdate}}</td>
+           <td>{{list.categoryid}}</td>
+       </tr>
+       </table>
+   </body>

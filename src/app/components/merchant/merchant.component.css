@@ -1,0 +1,12 @@
+body{
+	text-align:center;	
+	/* background-color:#f2efef; */
+	margin-top: 5%;
+}
+table{
+    text-align: center;
+    margin: auto;
+}
+.btn:hover{
+    background-color: black;
+}

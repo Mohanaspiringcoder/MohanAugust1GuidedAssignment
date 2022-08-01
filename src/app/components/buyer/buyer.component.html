@@ -1,0 +1,38 @@
+<p>buyer works!</p>
+
+<body>
+<!-- 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let list of productList">
+             <a href="#"> <img src={{list.imageurl}}  style="width:100%"></a>
+              <div class="price"><br>
+                <b>{{list.name}}</b>
+                <p>{{list.unitprice}}</p>
+                <button type="button" class="btn btn-success">Buy now </button>&nbsp;&nbsp;
+                <button type="button" class="btn btn-info">Add to cart</button>
+              </div>
+        </div>
+      </div>
+    </div>
+     -->
+     
+    <div class="m-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let list of productList">
+                <div class="card" >
+                    <img src={{list.imageurl}} style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{list.name}}</h5>
+                        <p class="card-text">{{list.unitprice}}</p>
+                        <button type="button" class="btn btn-success">Buynow</button>
+                        <button type="button" class="btn btn-info">Add to cart</button>
+                    </div>
+  
+                </div>
+            </div>
+        </div>
+    </div>        
+          
+    </body>
+
